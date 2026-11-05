@@ -1,0 +1,15 @@
+.target-tiers-builder {
+    overflow: visible;
+}
+
+.plan-tier-row {
+    flex-wrap: nowrap;
+}
+
+.tier-built-label__text {
+    word-break: break-word;
+}
+
+.tier-built-label__line + .tier-built-label__line {
+    margin-top: 0.15rem;
+}

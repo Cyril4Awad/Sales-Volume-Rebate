@@ -1,0 +1,112 @@
+/* Scoped mobile layout for AdvancedTable — wrap tables in .adv-mobile-table */
+
+.adv-mobile-table .adv-mobile-label {
+    display: none;
+}
+
+.adv-mobile-table .adv-mobile-dual__mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 766px) {
+    .adv-mobile-table .ReactTable .rt-tbody .rt-tr-group {
+        border: 1px solid #e3e7ec !important;
+        border-radius: 8px !important;
+        margin-bottom: 12px !important;
+        padding: 0 !important;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .adv-mobile-table .ReactTable .rt-tr .rt-td {
+        padding: 0 !important;
+        margin: 0 !important;
+        border-bottom: 1px solid #f0f2f5 !important;
+        text-align: left !important;
+        word-break: break-word;
+    }
+
+    .adv-mobile-table .ReactTable .rt-tr .rt-td:last-child {
+        border-bottom: none !important;
+    }
+
+    .adv-mobile-table .adv-mobile-label {
+        display: inline;
+    }
+
+    .adv-mobile-table .adv-mobile-row,
+    .adv-mobile-table .adv-mobile-plain,
+    .adv-mobile-table .adv-mobile-dual__mobile {
+        text-align: left !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-size: 14px;
+        color: #1b2733;
+    }
+
+    .adv-mobile-table .adv-mobile-actions {
+        text-align: right !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .adv-mobile-table .adv-mobile-actions .d-flex {
+        justify-content: flex-end !important;
+        align-items: center !important;
+    }
+
+    .adv-mobile-table .adv-mobile-dual__desktop {
+        display: none !important;
+    }
+
+    .adv-mobile-table .adv-mobile-dual__mobile {
+        display: block !important;
+    }
+
+    .adv-mobile-table .ReactTable .rt-td:has(.adv-mobile-hide) {
+        display: none !important;
+    }
+
+    .adv-mobile-table .numberOfRows {
+        display: none !important;
+    }
+
+    .adv-mobile-table .ReactTable {
+        width: 100% !important;
+    }
+
+    /* Override inline center/right wrappers and computation cells */
+    .adv-mobile-table .rt-td .cvr-cell,
+    .adv-mobile-table .rt-td .cvr-cell--center {
+        justify-content: flex-start !important;
+        text-align: left !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        white-space: normal;
+    }
+
+    .adv-mobile-table .rt-td > div[style*="text-align: center"],
+    .adv-mobile-table .rt-td > div[style*="text-align: right"],
+    .adv-mobile-table .rt-td .text-end {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Action cells stay right-aligned */
+    .adv-mobile-table .rt-td:has(.adv-mobile-actions) {
+        text-align: right !important;
+    }
+
+    .adv-mobile-table .rt-td:has(.adv-mobile-actions) > div {
+        text-align: right !important;
+        justify-content: flex-end !important;
+    }
+
+    /* Reference table inner padding */
+    .adv-mobile-table .rt-td .px-2 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

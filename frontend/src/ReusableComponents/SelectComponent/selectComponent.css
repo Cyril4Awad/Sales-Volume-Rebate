@@ -1,0 +1,344 @@
+/* from customstyle.css */
+/* SELECT BOX START */
+
+.react-select-box-container {
+    position: relative;
+    width: 75%;
+    height: 26px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: left;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    margin-top: 1px;
+}
+
+.react-select-box {
+    padding: 5px 0;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+}
+
+.react-select-box:focus {
+    outline: 0;
+    box-shadow: 0 0 4px #0493D1;
+}
+
+.react-select-box:before {
+    content: ' ';
+    z-index: 1;
+    position: absolute;
+    height: 20px;
+    top: 3px;
+    right: 34px;
+    border-left: 1px solid #CBD2D7;
+}
+
+.react-select-box:after {
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    right: 13px;
+    border-top: 6px solid #7B8E9B;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.react-select-box-label,
+.react-select-box-option {
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7B8E9B;
+}
+
+.react-select-box-label {
+    padding: 0 40px 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #0493D1;
+}
+
+.react-select-box-empty .react-select-box-label {
+    color: #7B8E9B;
+}
+
+.react-select-box-click-outside-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.react-select-box-clear {
+    position: absolute;
+    top: 4px;
+    right: 1px;
+    width: 33px;
+    height: 20px;
+    background-color: #fff;
+    text-indent: -9999em;
+    z-index: 3;
+    border: none;
+}
+
+.react-select-box-clear:before {
+    content: '×';
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    z-index: 1;
+    background-color: #7B8E9B;
+    border-radius: 100%;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1;
+    width: 15px;
+    height: 15px;
+    text-indent: 0;
+    text-align: center;
+}
+
+.react-select-box-clear:hover,
+.react-select-box-clear:focus {
+    outline: 0;
+}
+
+.react-select-box-clear:hover:before,
+.react-select-box-clear:focus:before {
+    background-color: #0493D1;
+}
+
+.react-select-box-hidden {
+    display: none
+}
+
+.react-select-box-options {
+    margin: 2px 0 0;
+    position: absolute;
+    padding: 10px 0;
+    width: 240px;
+    top: 100%;
+    left: 0;
+    z-index: 4;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    display: block;
+}
+
+.react-select-box-options-list {
+    list-style: none outside;
+    margin: 0;
+    padding: 0;
+}
+
+.react-select-box-option {
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.react-select-box-option:hover {
+    color: #0493D1;
+    background-color: #f4f4f4;
+}
+
+.react-select-box-option-selected {
+    color: #CBD2D7;
+}
+
+.react-select-box-multi .react-select-box-option {
+    padding-left: 42px;
+    position: relative;
+}
+
+.react-select-box-multi .react-select-box-option:before {
+    content: ' ';
+    position: absolute;
+    line-height: 1;
+    text-align: center;
+    left: 20px;
+    top: 9px;
+    border-radius: 3px;
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+    border: 1px solid #7B8E9B;
+    background: #f9f9f9;
+    vertical-align: middle;
+}
+
+.react-select-box-multi .react-select-box-option-selected:before {
+    content: '✓';
+}
+
+.react-select-box-multi .react-select-box-option-selected {
+    color: #1F3344;
+}
+
+.react-select-box-option:focus,
+.react-select-box-option-focused {
+    color: #0493D1;
+    outline: 0;
+    background-color: #DDE2E5;
+}
+
+.react-select-box-close {
+    color: #0493D1;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.react-select-box-close:hover,
+.react-select-box-close:focus {
+    text-decoration: underline;
+}
+
+.react-select-box-empty .react-select-box-close {
+    color: #CBD2D7;
+}
+
+.react-select-box-native {
+    position: absolute;
+    left: -99999em;
+}
+
+/* Floating Label Select Styles (match InputTextComp) */
+.floating-label-select-wrapper {
+    position: relative;
+    width: 100%;
+    display: block;
+    min-height: 35px;
+    height: auto;
+    overflow: visible;
+}
+
+/* Override base floating-label wrapper fixed height for select */
+.floating-label-wrapper.floating-label-select-wrapper {
+    min-height: 35px;
+    height: auto;
+    overflow: visible;
+}
+
+.floating-label-select-wrapper .Select {
+    width: 100%;
+}
+
+.floating-label-select-wrapper .Select-control {
+    min-height: 35px;
+    height: auto;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-shadow: none;
+    background-color: #fff;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.floating-label-select-wrapper .Select--multi .Select-control {
+    min-height: 35px;
+    height: auto;
+}
+
+.floating-label-select-wrapper .Select--multi .Select-multi-value-wrapper {
+    min-height: 33px;
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+
+.floating-label-select-wrapper .Select-control:hover {
+    border-color: #ced4da;
+}
+
+.floating-label-select-wrapper .Select.is-focused>.Select-control,
+.floating-label-select-wrapper.floating-label-wrapper--focused .Select-control {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.floating-label-select-wrapper .Select-placeholder,
+.floating-label-select-wrapper .Select--single>.Select-control .Select-value {
+    line-height: 33px;
+    padding-left: 12px;
+    padding-right: 30px;
+}
+
+.floating-label-select-wrapper .Select-input {
+    height: 33px;
+    padding-left: 12px;
+}
+
+.floating-label-select-wrapper .Select-input>input {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.floating-label-select-wrapper .Select-arrow-zone {
+    padding-right: 8px;
+}
+
+.floating-label-select-wrapper .Select.is-disabled>.Select-control {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    cursor: not-allowed;
+}
+
+.floating-label-select-wrapper .floating-label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    background-color: #fff;
+    padding: 0 4px;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+}
+
+.floating-label-select-wrapper .floating-label--active,
+.floating-label-select-wrapper.floating-label-wrapper--focused .floating-label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.floating-label-select-wrapper.floating-label-wrapper--focused .floating-label {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+
+    .floating-label-select-wrapper .floating-label--active,
+    .floating-label-select-wrapper.floating-label-wrapper--focused .floating-label {
+        font-size: 11px;
+    }
+}
+
+/* Portaled react-select menus (modal overlays) */
+.Select-menu-outer,
+[class*="menu-portal"] {
+    z-index: 999999 !important;
+}

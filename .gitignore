@@ -1,0 +1,26 @@
+# Repository-wide ignores (see frontend/.gitignore and backend/.gitignore for stack-specific rules)
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors & IDEs
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment & local secrets
+.env
+.env.*
+!.env.example
+
+# Local overrides (keep committed appsettings.json / appsettings.Development.json as-is)
+**/appsettings.Local.json
+**/appsettings.*.local.json
+**/secrets.json
+
+# Misc
+*.log
+*.tmp
+~$*

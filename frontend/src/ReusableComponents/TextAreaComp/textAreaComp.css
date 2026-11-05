@@ -1,0 +1,6 @@
+/* Let autosize textarea grow without overlapping next controls */
+.floating-label-wrapper.floating-label-textarea-wrapper {
+    min-height: 35px;
+    height: auto;
+    overflow: visible;
+}

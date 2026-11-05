@@ -1,0 +1,139 @@
+.hyperlink-text {
+    color: #0078bb;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.hyperlink-text:hover {
+    color: #005f96;
+    text-decoration: underline;
+}
+
+/* Action links inside the plan-actions row must not inherit
+   .hyperlink-text's margin-right — that margin only applies when the
+   element ALSO has .hyperlink-text (i.e. only on the unlocked View/Edit
+   and unlocked Delete spans, never on the locked/text-muted Delete
+   span), which made the two rows' total widths differ and shifted the
+   centered group left/right depending on lock state. The flex gap
+   already provides consistent spacing, so zero this out unconditionally. */
+.plan-actions .plan-action-link {
+    margin-right: 0;
+}
+
+/* ── Mobile table cell helpers (desktop: labels hidden, dual mobile hidden) ── */
+.adv-mobile-label {
+    display: none;
+}
+
+.adv-mobile-dual__mobile {
+    display: none;
+}
+
+/* Desktop-only — Contract column gets a little breathing room; scoped
+   above the mobile breakpoint so it never applies in the mobile card view */
+@media only screen and (min-width: 767px) {
+    .plan-contract-cell {
+        padding-left: 10px;
+    }
+}
+
+/* Desktop-only — Fees table Name column, same treatment as Contract */
+@media only screen and (min-width: 767px) {
+    .fee-name-cell {
+        padding-left: 10px;
+    }
+}
+
+/* ── Mobile (≤766px): plain left-aligned "Label: value" card rows ─────────── */
+@media only screen and (max-width: 766px) {
+
+    .vr-plans-page .ReactTable .rt-tbody .rt-tr-group,
+    .cvr-workspace-root .ReactTable .rt-tbody .rt-tr-group,
+    .plan-editor-modal-shell .ReactTable .rt-tbody .rt-tr-group,
+    .vr-contracts-page .ReactTable .rt-tbody .rt-tr-group,
+    .modal-body .ReactTable .rt-tbody .rt-tr-group {
+        border: 1px solid #e3e7ec !important;
+        border-radius: 8px !important;
+        margin-bottom: 12px !important;
+        padding: 0 !important;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .vr-plans-page .ReactTable .rt-tr .rt-td,
+    .cvr-workspace-root .ReactTable .rt-tr .rt-td,
+    .plan-editor-modal-shell .ReactTable .rt-tr .rt-td,
+    .vr-contracts-page .ReactTable .rt-tr .rt-td,
+    .modal-body .ReactTable .rt-tr .rt-td {
+        padding: 8px 12px !important;
+        border-bottom: 1px solid #f0f2f5 !important;
+        text-align: left !important;
+        word-break: break-word;
+    }
+
+    .vr-plans-page .ReactTable .rt-tr .rt-td:last-child,
+    .cvr-workspace-root .ReactTable .rt-tr .rt-td:last-child,
+    .plan-editor-modal-shell .ReactTable .rt-tr .rt-td:last-child,
+    .vr-contracts-page .ReactTable .rt-tr .rt-td:last-child,
+    .modal-body .ReactTable .rt-tr .rt-td:last-child {
+        border-bottom: none !important;
+    }
+
+    .adv-mobile-label {
+        display: inline;
+    }
+
+    .adv-mobile-row,
+    .adv-mobile-plain {
+        text-align: left;
+        font-size: 14px;
+        color: #1b2733;
+    }
+
+    .adv-mobile-actions {
+        text-align: right;
+    }
+
+    .adv-mobile-actions .plan-actions,
+    .adv-mobile-actions .d-flex {
+        justify-content: flex-end !important;
+    }
+
+    .adv-mobile-dual__desktop {
+        display: none !important;
+    }
+
+    .adv-mobile-dual__mobile {
+        display: block !important;
+    }
+
+    .ReactTable .rt-td:has(.adv-mobile-hide) {
+        display: none !important;
+    }
+
+    .cvr-table-scroll-wrapper,
+    .cvr-sales-metrics-table-wrap,
+    .cvr-results-table-wrap {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-x: hidden;
+    }
+
+    .plan-editor-modal-shell .ReactTable .rt-td .d-flex.justify-content-center {
+        justify-content: flex-start !important;
+    }
+
+    .vr-plans-page .ReactTable .rt-tr.-padRow {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .cvr-table-scroll-wrapper,
+    .cvr-sales-metrics-table-wrap {
+        max-width: 100%;
+        min-width: 0;
+    }
+}

@@ -1,0 +1,203 @@
+/* ─── Computation Workspace ─────────────────────────────── */
+
+/* Scoped row/cell fixes for tier & condition tables */
+.cvr-computation-target-body .rt-tr.-padRow {
+    display: none;
+}
+
+.cvr-computation-target-body .rt-tr {
+    min-height: unset !important;
+}
+
+/* Remove cell padding so Cell renderer owns it fully */
+.cvr-computation-target-body .rt-td {
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+/* Cell renderer base — all cells in computation tables */
+.cvr-cell {
+    height: 100%;
+    padding: 7px 8px;
+    display: flex;
+    align-items: center;
+}
+
+.cvr-cell--center {
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.cvr-cell--matched {
+    background-color: #d1e7dd;
+}
+
+/* In VRComputationWorkspace.css — copied from VRPlansWorkspace.css */
+
+.hyperlink-text {
+    color: #0078bb;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.hyperlink-text:hover {
+    color: #005f96;
+    text-decoration: underline;
+}
+
+.planEditorModal.importDataModal .modal-dialog {
+    max-width: min(1400px, 96vw);
+}
+
+.planEditorModal.importDataModal .modal-content {
+    min-height: 90vh;
+}
+
+.planEditorModal.importDataModal .modal-body {
+    height: calc(92vh - 150px);
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+@media (max-width: 766px) {
+    .cvr-computation-target-body .cvr-cell--center {
+        justify-content: flex-start;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .cvr-computation-target-body .cvr-cell {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 767px) {
+    .cvr-workspace-root {
+        padding: 12px !important;
+    }
+}
+
+.cvr-table-scroll-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cvr-target-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.cvr-target-col-left {
+    width: 36%;
+    flex-shrink: 0;
+}
+
+.cvr-target-col-right {
+    flex-shrink: 0;
+    min-width: 0;
+    overflow-x: auto;
+}
+
+.cvr-results-table-wrap {
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.cvr-computation-target-body .cvr-results-table-wrap .ReactTable {
+    width: auto !important;
+}
+
+.cvr-computation-target-body .cvr-results-table-wrap .ReactTable .rt-table {
+    width: auto !important;
+}
+
+.cvr-sales-metrics-table-wrap {
+    display: inline-block;
+    min-width: 540px;
+}
+
+@media (max-width: 766px) {
+    .cvr-computation-target-body .numberOfRows {
+        display: none !important;
+    }
+
+    .cvr-sales-metrics-table-wrap,
+    .cvr-results-table-wrap {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .cvr-computation-target-body .ReactTable {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .cvr-target-columns {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .cvr-target-col-left,
+    .cvr-target-col-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .cvr-always-applied {
+        min-width: unset !important;
+        width: 100%;
+    }
+}
+
+.cvr-fees-table-wrap {
+    display: inline-block;
+    min-width: 540px;
+}
+
+.cvr-fee-batch-table-wrap {
+    display: inline-block;
+    width: fit-content;
+    min-width: 500px;
+}
+
+@media only screen and (max-width: 766px) {
+    .cvr-fees-table-wrap,
+    .cvr-fee-batch-table-wrap {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .cvr-computation-header {
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: flex-start !important;
+    }
+
+    .cvr-computation-header .plan-editor-toolbar {
+        flex-wrap: wrap;
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 6px;
+    }
+
+    .cvr-computation-header .plan-editor-toolbar .btn-primary {
+        flex-shrink: 0;
+    }
+}
+
+.cvr-accounting-generation-notice {
+    color: var(--bs-danger, #dc3545);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.45;
+    margin-bottom: 0;
+}

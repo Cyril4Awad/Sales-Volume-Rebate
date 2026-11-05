@@ -1,0 +1,11 @@
+.hyperlink-text {
+    color: #0078bb;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.hyperlink-text:hover {
+    color: #005f96;
+    text-decoration: underline;
+}

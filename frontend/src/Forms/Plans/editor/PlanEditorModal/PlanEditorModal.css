@@ -1,0 +1,209 @@
+.modal.reset-modal-style.importDataModal.planEditorModal .modal-dialog {
+    max-width: min(1400px, 96vw);
+    margin: 75px auto 20px;
+}
+.modal.reset-modal-style.importDataModal.planEditorModal .modal-content {
+    min-height: 90vh;
+}
+.modal.reset-modal-style.importDataModal.planEditorModal .modal-body {
+    height: calc(92vh - 150px);
+    overflow-x: visible;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+.plan-editor-modal-shell {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+}
+.plan-editor-modal-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-x: visible;
+    overflow-y: auto;
+    padding-bottom: 8px;
+}
+.plan-editor-modal-footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 10px 0 4px;
+    margin-top: 8px;
+    border-top: 1px solid #dee2e6;
+    background: #fff;
+}
+.plan-editor-modal-footer-bar__primary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.computation-simulation-modal .cvr-sales-metrics-table-wrap {
+    display: inline-block;
+    min-width: 540px;
+}
+
+.computation-results-panel--simulation .cvr-target-col-left {
+    width: 48%;
+    flex-shrink: 0;
+}
+
+.computation-results-panel--simulation .cvr-target-col-right {
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+.computation-results-panel--simulation .cvr-table-scroll-wrapper {
+    overflow-x: visible;
+}
+
+.computation-results-panel--simulation .cvr-target-columns {
+    gap: 32px;
+}
+.plan-modal-validation-alert {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+    max-width: 100%;
+    text-align: left;
+    font-size: 0.85rem;
+}
+.plan-modal-validation-alert__title {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+}
+.plan-modal-validation-alert__list {
+    padding-left: 1.15rem;
+    max-height: 8rem;
+    overflow-y: auto;
+    font-size: 0.8rem;
+    line-height: 1.35;
+}
+.plan-modal-validation-alert__list li + li {
+    margin-top: 0.15rem;
+}
+.target-type-confirm-modal .modal-dialog {
+    max-width: 420px;
+    margin: 75px auto 20px;
+}
+@media (max-width: 767px) {
+    .plan-targets-layout {
+        flex-direction: column !important;
+        min-height: unset !important;
+    }
+}
+@media (max-width: 575px) {
+    .modal.reset-modal-style.importDataModal.planEditorModal .modal-dialog {
+        margin: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .modal.reset-modal-style.importDataModal.planEditorModal .modal-content {
+        min-height: 100vh !important;
+        border-radius: 0 !important;
+    }
+    .modal.reset-modal-style.importDataModal.planEditorModal .modal-body {
+        height: calc(100vh - 120px) !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+        padding: 12px !important;
+        padding-bottom: 0 !important;
+    }
+    .plan-editor-modal-scroll {
+        padding-bottom: 8px;
+    }
+}
+
+/* ── Toolbar ─────────────────────────────────────────────────────────────── */
+
+.plan-editor-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.plan-editor-toolbar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1.4;
+    transition: background 0.12s;
+}
+
+.plan-editor-toolbar-btn i {
+    font-size: 13px;
+    color: #000;
+}
+
+.plan-editor-toolbar-btn:hover,
+.plan-editor-toolbar-btn:active,
+.plan-editor-toolbar-btn:focus {
+    background: rgba(0, 0, 0, 0.07);
+    color: #000;
+    outline: none;
+    box-shadow: none;
+}
+
+.plan-editor-toolbar--body {
+    justify-content: flex-end;
+    padding: 8px 0 12px;
+    border-bottom: 1px solid #e8edf5;
+    margin-bottom: 12px;
+}
+.modal.reset-modal-style.importDataModal.planEditorModal .modal-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.modal.reset-modal-style.importDataModal.planEditorModal .modal-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    flex:1 !important;
+}
+
+.plan-editor-readonly .plan-editor-modal-scroll {
+    pointer-events: auto;
+    opacity: 0.88;
+}
+
+.plan-editor-readonly .plan-editor-modal-scroll .hyperlink-text,
+.plan-editor-readonly .plan-editor-modal-scroll .react-select__control,
+.plan-editor-readonly .plan-editor-modal-scroll .react-select__indicators,
+.plan-editor-readonly .plan-editor-modal-scroll .plan-target-nav-mutation,
+.plan-editor-readonly .plan-editor-modal-scroll input,
+.plan-editor-readonly .plan-editor-modal-scroll textarea,
+.plan-editor-readonly .plan-editor-modal-scroll select,
+.plan-editor-readonly .plan-editor-modal-scroll .ql-toolbar,
+.plan-editor-readonly .plan-editor-modal-scroll .ql-container,
+.plan-editor-readonly .plan-editor-modal-scroll button:not(.plan-editor-readonly-allow) {
+    pointer-events: none;
+}
+
+body.plan-editor-readonly-active .react-select__menu-portal,
+body.plan-editor-readonly-active .react-datepicker-popper {
+    pointer-events: none !important;
+}
+
+.plan-editor-readonly .plan-editor-modal-footer-bar {
+    pointer-events: auto;
+    opacity: 1;
+}

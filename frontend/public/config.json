@@ -1,0 +1,4 @@
+{
+  "AUTH_BASE": "http://localhost:50001/api",
+  "API_BASE": "http://localhost:50002/api"
+}

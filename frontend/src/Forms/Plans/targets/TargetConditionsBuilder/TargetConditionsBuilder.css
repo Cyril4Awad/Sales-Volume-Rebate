@@ -1,0 +1,62 @@
+.target-conditions-builder {
+    overflow: visible;
+}
+
+.condition-group-card {
+    background-color: #f0f0f0;
+}
+
+.condition-group-card.condition-droppable-active {
+    background-color: #e8f4fc;
+    border-color: #0078bb !important;
+}
+
+.condition-group-alert {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.condition-droppable-active {
+    background-color: #e8f4fc;
+    border-color: #0078bb !important;
+}
+
+.condition-new-group-drop {
+    min-height: 2.5rem;
+}
+
+.condition-drag-handle {
+    cursor: grab;
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.condition-dragging {
+    background: #f8f9fa;
+}
+
+.condition-and-label,
+.condition-or-strip {
+    letter-spacing: 0.02em;
+}
+
+.condition-built-label__text {
+    word-break: break-word;
+}
+
+.plan-operator-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2.25rem;
+    padding: 0 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #495057;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    user-select: none;
+}

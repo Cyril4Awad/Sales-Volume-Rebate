@@ -1,0 +1,8 @@
+.plan-fees-section,
+.target-tiers-builder {
+    overflow: visible;
+}
+
+.plan-fee-row {
+    flex-wrap: nowrap;
+}

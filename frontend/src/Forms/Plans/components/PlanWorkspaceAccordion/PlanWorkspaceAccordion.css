@@ -1,0 +1,15 @@
+.plan-accordion,
+.plan-accordion .card-body {
+    overflow: visible;
+}
+
+.plan-accordion--nested {
+    border-left: 3px solid #e9ecef;
+    margin-left: 0.5rem;
+    padding-left: 0.75rem;
+    box-shadow: none !important;
+}
+
+.plan-accordion--nested .card-header {
+    background-color: #fafbfc !important;
+}

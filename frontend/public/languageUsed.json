@@ -1,0 +1,120 @@
+{
+    "login": [
+        {
+            "title": {
+                "EN": "Sign In to your account as a",
+                "FR": "Sign In to your account as a",
+                "AR": "تسجيل الدخول إلى حسابك ك"
+            },
+            "doctor": {
+                "EN": "Doctor",
+                "FR": "Médecin",
+                "AR": "طبيب"
+            },
+            "patient": {
+                "EN": "Patient",
+                "FR": "Patient",
+                "AR": "مريض"
+            },
+            "login": {
+                "EN": "Login",
+                "FR": "LOGIN",
+                "AR": "تسجيل الدخول"
+            },
+            "userName": {
+                "EN": "User Name",
+                "FR": "Nom d'utilisateur",
+                "AR": "اسم المستخدم"
+            },
+            "userNamePlaceholder": {
+                "EN": "User Name",
+                "FR": "Nom d'utilisateur",
+                "AR": "اسم المستخدم"
+            },
+            "userNamePlaceholderPatient": {
+                "EN": "User Name / Medical File",
+                "FR": "Nom d'utilisateur / Numéro de dossier médical",
+                "AR": "اسم المستخدم / رقم الملف الطبي"
+            },
+            "password": {
+                "EN": "Password",
+                "FR": "Password",
+                "AR": "كلمة المرور"
+            },
+            "passwordPlaceholder": {
+                "EN": "Password",
+                "FR": "Password",
+                "AR": "كلمة المرور"
+            },
+            "passwordPlaceholderPatient": {
+                "EN": "Password / Case Number",
+                "FR": "Mot de passe / Numéro de cas",
+                "AR": "كلمة المرور / رقم الحالة"
+            },
+            "keepMeSignedIn": {
+                "EN": "keep me signed in",
+                "FR": "keep me signed in",
+                "AR": "ابقني مسجل"
+            },
+            "signin": {
+                "EN": "SIGN IN",
+                "FR": "SIGN IN",
+                "AR": "الاستمرار في تسجيل الدخول"
+            },
+            "forgetPassword": {
+                "EN": "Forget your password ?",
+                "FR": "Forget your password ?",
+                "AR": "هل نسيت كلمة المرور؟"
+            },
+            "dontHaveAccount": {
+                "EN": "Don't have an account ? ",
+                "FR": "Don't have an account ? ",
+                "AR": " ليس لديك حساب؟ "
+            },
+            "dontHaveAccountSignUp": {
+                "EN": "Sign Up",
+                "FR": "Sign Up",
+                "AR": "إشترك"
+            }
+        }
+    ],
+    "sidebar": [
+        {
+            "myPatients": {
+                "EN": "My Patients",
+                "FR": "Mes Patients",
+                "AR": "مرضاي"
+            },
+            "labResults": {
+                "EN": "Lab Results",
+                "FR": "Résultats des analyses",
+                "AR": "نتائج المختبر"
+            },
+            "radResults": {
+                "EN": "Results Center",
+                "FR": "Résultats du centre",
+                "AR": "مركز النتائج"
+            },
+            "dischargeSummary": {
+                "EN": "Discharge Summary",
+                "FR": "Résumé de sortie",
+                "AR": "ملخص الخروج"
+            },
+            "summaryFile": {
+                "EN": "Summary File",
+                "FR": "Fichier résumé",
+                "AR": "ملخص الملف"
+            },
+            "physicianOrders": {
+                "EN": "Physician Orders",
+                "FR": "Commandes médicales",
+                "AR": "أوامر الطبيب"
+            },
+            "medicalHistory": {
+                "EN": "Medical History",
+                "FR": "Historique médical",
+                "AR": "السجل الطبي"
+            }
+        }
+    ]
+}

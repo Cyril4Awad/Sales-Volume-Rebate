@@ -1,0 +1,173 @@
+.plan-modal-card,
+.plan-modal-card .card-body,
+.plan-contract-section,
+.plan-contract-section .card-body {
+    overflow: visible;
+}
+
+.sub-client-picker-row--locked {
+    opacity: 0.65;
+}
+
+.sub-client-row--new {
+    background-color: #fff8e1;
+}
+
+.contract-ref-field {
+    position: relative;
+    padding-bottom: 1.25rem;
+}
+
+.contract-ref-field__error {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 2px;
+    min-height: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    pointer-events: none;
+}
+
+/* ── Upload area ── */
+.plan-modal-card .files-list {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #fafafa;
+    padding: 8px;
+    max-height: 120px;
+    justify-content: flex-start;
+    gap: 8px;
+    display: block;
+}
+
+.plan-modal-card .files-list .center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 13px;
+    height: 60px !important;
+}
+
+.plan-modal-card .files-list .center h6 {
+    font-size: 13px;
+    color: #aaa;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Choose File button */
+.plan-modal-card input[type="button"] {
+    background-color: #0078bb !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 5px 14px !important;
+    font-size: 13px !important;
+    cursor: pointer !important;
+    margin-bottom: 8px !important;
+    transition: background 0.2s;
+}
+
+.plan-modal-card input[type="button"]:hover {
+    background-color: #005f96 !important;
+}
+
+/* File item sizing */
+.plan-modal-card .file-item {
+    margin: 0 !important;
+    width: 100% !important;
+    min-width: unset !important;
+    flex: none;
+}
+
+/* File item card container */
+.plan-modal-card .file-item__content {
+    height: auto !important;
+    position: relative;
+    padding: 0 !important;
+    border-radius: 6px !important;
+    border: 1px solid #d0e4f7 !important;
+    background: #eaf4ff !important;
+    box-shadow: none !important;
+    width: 100% !important;     
+    max-width: unset !important;  
+    overflow: hidden;
+}
+
+/* card-ui inside file item */
+.plan-modal-card .file-item .card-ui {
+    background: #eaf4ff !important;
+    box-shadow: none !important;
+    border-radius: 6px !important;
+    padding: 6px 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* THE FIX — override the dark #292929 background on the <a> tag */
+.plan-modal-card .file-item a,
+.plan-modal-card .file-item a:hover,
+.plan-modal-card .file-item a:active {
+    background: transparent !important;
+    color: #0078bb !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    text-decoration: none !important;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Avatar / thumbnail */
+.plan-modal-card .avatar-ui {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    width: 24px !important;
+    height: 24px !important;
+    min-width: unset !important;
+}
+
+.plan-modal-card .avatar-ui img {
+    width: 24px !important;
+    height: 24px !important;
+    object-fit: contain !important;
+    border-radius: 0 !important;
+}
+
+.plan-modal-card .file-item__image {
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0;
+    margin-right: 0 !important;
+}
+
+/* Filename */
+.plan-modal-card .file-item__info h2 {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #0078bb !important;
+    margin: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100% !important; 
+}
+
+/* Remove button */
+.plan-modal-card .file-item__remove {
+    position: static !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    color: #dc3545 !important;
+    font-size: 11px !important;
+    margin-left: auto !important;
+    background: transparent !important;
+    cursor: pointer;
+}

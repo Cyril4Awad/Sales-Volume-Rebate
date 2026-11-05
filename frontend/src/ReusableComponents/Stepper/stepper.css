@@ -1,0 +1,86 @@
+.stepper-container {
+    position: relative;
+    padding: 0px;
+}
+
+.stepper-col {
+    position: relative;
+    flex: 1;
+    padding: 0;
+}
+
+/* Circles Row */
+.stepper-circles-row {
+    position: relative;
+}
+
+/* Step Circles */
+.step-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #0078bb;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+}
+
+.step-circle.active {
+    background-color: #0078bb;
+    box-shadow: 0 0 0 2px #0078bb;
+    border: 2px solid white;
+}
+
+.step-circle.completed {
+    background-color: #0078bb;
+    color: white;
+    cursor: pointer;
+}
+
+.step-circle .checkmark {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+}
+
+/* Step Labels */
+@media (min-width: 768px) {
+    .stepper-labels-row {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stepper-labels-row {
+        padding-top: 0px;
+    }
+}
+
+.step-label {
+    font-size: 14px;
+    color: #6c757d;
+    word-wrap: break-word;
+}
+
+.step-label.active {
+    color: #0078bb;
+    font-weight: 500;
+}
+
+/* Connecting line between circles */
+.step-line {
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #0078bb;
+    z-index: 0;
+    transform: translateY(-50%);
+}
